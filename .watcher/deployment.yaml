@@ -4,6 +4,7 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
+    something: WATCHER_NS_NAME.somedomain.com
 spec:
   replicas: 3
   selector:
