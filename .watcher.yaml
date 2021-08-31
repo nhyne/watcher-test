@@ -1,4 +1,7 @@
+---
 resourceFolder: .watcher
 templateCommand: Kustomize
 dependencies:
-  - repoUrl: https://github.com/nhyne/watcher-test-dependency
+  - owner: nhyne
+    name: watcher-test-dependency
+    branch: master
