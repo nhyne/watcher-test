@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
-    something: WATCHER_NS_NAME.somedomain.com
+    something: $(KREDIK_NAMESPACE).something.nowhere
 spec:
   replicas: 3
   selector:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:$(IMAGE_TAG)
+        image: nginx:$(KREDIK_IMAGE_TAG)
         ports:
         - containerPort: 80
