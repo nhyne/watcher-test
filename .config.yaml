@@ -6,3 +6,4 @@ dependencies:
   - owner: nhyne
     name: watcher-test-dependency
     branch: master
+    imageTag: latest
